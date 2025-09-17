@@ -31,12 +31,19 @@ const director: Director = {
   numberOfReports: 17,
   contract: true
 };console.log(director);
-type printTeacherFunction = (firstName: string, lastName: string) => string;
+// type FunctionprintTeacher = (firstName: string, lastName: string) => string;
 
-const printTeacher: printTeacherFunction = (firstName: string, lastName: string): string => {
+// const printTeacher: FunctionprintTeacher = (firstName: string, lastName: string): string => {
+//   const firstInitial = firstName.charAt(0).toUpperCase();
+//   return `${firstInitial}. ${lastName}`;
+// };
+// console.log(printTeacher("samuel", "kamau"));
+// console.log(printTeacher("john", "mathew"));
+
+const printTeacher = (firstName: string, lastName: string): string => {
   const firstInitial = firstName.charAt(0).toUpperCase();
   return `${firstInitial}. ${lastName}`;
-};
+}
 console.log(printTeacher("samuel", "kamau"));
 console.log(printTeacher("john", "mathew"));
 
