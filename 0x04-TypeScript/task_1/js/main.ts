@@ -1,4 +1,4 @@
-type Teacher = {
+interface Teacher {
   firstName: string;
   lastName: string;
   fulltimeEmployee: boolean;
@@ -7,7 +7,7 @@ type Teacher = {
   contract: boolean;
 };
 
-const Teacher: Teacher  = {
+const teacher: Teacher = {
   firstName: "samuel",
   lastName: "kamau",
   fulltimeEmployee: false,
@@ -16,7 +16,7 @@ const Teacher: Teacher  = {
   contract: false
 };
 console.log(teacher);
-type Directors = {
+interface Directors {
   firstName: string;
   lastName: string;
   location: string;
