@@ -46,7 +46,6 @@ function printTeacher(firstName: string, lastName: string): string {
 }
 
 printTeacher("samuel", "kamau");
-printTeacher("john", "mathew");
 
 interface StudentClass {
  new (firstName: string, lastName: string): StudentClass;
