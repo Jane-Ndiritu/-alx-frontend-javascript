@@ -6,7 +6,8 @@ import * as CRUD from './crud.js';
 // Create an object with type RowElement
 const row: RowElement = {
   firstName: 'Guillaume',
-  lastName: 'Salva'
+  lastName: 'Salva',
+  age: 23
 };
 
 // Insert row and get new row ID
