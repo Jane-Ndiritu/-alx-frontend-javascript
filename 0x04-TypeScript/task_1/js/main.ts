@@ -17,22 +17,19 @@ const teacher: Teacher = {
   contract: false
 };
 console.log(teacher);
-interface Directors {
-  firstName: string;
-  lastName: string;
-  location: string;
-  fullTimeEmployee: boolean;
+
+interface Directors extends Teacher {
   numberOfReports: number;
-};
+  
+}
 
 const director: Directors = {
-  firstName: 'John',
-  lastName: 'Mathew',
-  location: 'Nairobi',
+  firstName: "John",
+  lastName: "Mathew:",
+  location: "Nairobi",
   fullTimeEmployee: true,
   numberOfReports: 17,
-};
-console.log(director);
+};console.log(director);
 type printTeacherFunction = (firstName: string, lastName: string) => string;
 
 const printTeacher: printTeacherFunction = (firstName: string, lastName: string): string => {
