@@ -50,3 +50,12 @@ class Teacher implements TeacherInterface {
       return employee.workTeacherTasks();
     }
   }
+  type Subjects = "Math" | "History";
+  function teachClass(todayClass: Subjects): string | void {
+    if (todayClass === "Math") {
+      return "Teaching Math";
+    } else if (todayClass === "History") {
+      return "Teaching History";
+    }
+  }
+  
