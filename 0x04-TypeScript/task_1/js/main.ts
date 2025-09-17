@@ -40,7 +40,7 @@ const director: Director = {
 // console.log(printTeacher("samuel", "kamau"));
 // console.log(printTeacher("john", "mathew"));
 
-const printTeacher = (firstName: string, lastName: string): string => {
+function printTeacher(firstName: string, lastName: string): string {
   const firstInitial = firstName.charAt(0).toUpperCase();
   return `${firstInitial}. ${lastName}`;
 }
