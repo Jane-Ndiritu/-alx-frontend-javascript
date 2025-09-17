@@ -16,3 +16,19 @@ const teacher: Teacher  = {
   contract: false
 };
 console.log(teacher);
+type Directors = {
+  firstName: string;
+  lastName: string;
+  location: string;
+  fullTimeEmployee: boolean;
+  numberOfReports: number;
+};
+
+const director: Directors = {
+  firstName: 'John',
+  lastName: 'Doe',
+  location: 'London',
+  fullTimeEmployee: true,
+  numberOfReports: 17,
+};
+console.log(director);
