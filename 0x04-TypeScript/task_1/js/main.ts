@@ -44,8 +44,9 @@ function printTeacher(firstName: string, lastName: string): string {
   const firstInitial = firstName.charAt(0).toUpperCase();
   return `${firstInitial}. ${lastName}`;
 }
-console.log(printTeacher("samuel", "kamau"));
-console.log(printTeacher("john", "mathew"));
+
+printTeacher("samuel", "kamau");
+printTeacher("john", "mathew");
 
 interface StudentClass {
  new (firstName: string, lastName: string): StudentClass;
