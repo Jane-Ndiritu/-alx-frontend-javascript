@@ -48,21 +48,32 @@ function printTeacher(firstName: string, lastName: string): string {
 
 console.log(printTeacher("samuel", "kamau"));
 
-interface StudentClass {
- new (firstName: string, lastName: string): StudentClass;
+interface StudentInterface {
+  firstName: string;
+  lastName: string;
   workOnHomework(): string;
   displayName(): string;
 }
-class StudentClass implements StudentClass{
-    constructor(private firstName: string, private lastName: string) {}
-
+class StudentClass {
+constructor(private firstName: string, private lastName: string) {}
   workOnHomework(): string {
     return "Currently working";
   }
-    displayName(): string {
-    return this.firstName;
-    }
+    displayName(): string { 
+      return this.firstName;
+  }
 }
+
+// class StudentClass implements StudentClass{
+//     constructor(private firstName: string, private lastName: string) {}
+
+//   workOnHomework(): string {
+//     return "Currently working";
+//   }
+//     displayName(): string {
+//     return this.firstName;
+//     }
+//}
 interface DirectorInterface {
   workFromHome(): string;
   getCoffeeBreak(): string;
