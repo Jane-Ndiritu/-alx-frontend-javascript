@@ -7,7 +7,7 @@ type Teacher = {
   contract: boolean;
 };
 
-const teacher: Teacher  = {
+const Teacher: Teacher  = {
   firstName: "samuel",
   lastName: "kamau",
   fulltimeEmployee: false,
