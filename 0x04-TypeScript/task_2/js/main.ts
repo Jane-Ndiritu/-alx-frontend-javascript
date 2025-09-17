@@ -50,13 +50,15 @@ class Teacher implements TeacherInterface {
       return employee.workTeacherTasks();
     }
   }
-  type Subjects = "Math" | "History";
-  export function teachClass(todayClass: Subjects): string | void {
-    if (todayClass === "Math") {
-      return "Teaching Math";
-    } else if (todayClass === "History") {
-      return "Teaching History";
-    }
+  export type Subjects = "Math" | "History";
+
+export function teachClass(todayClass:Subjects): unknown{
+  if (todayClass === "Math") {
+    return "Teaching Math";
   }
-  
+  if (todayClass === "History") {
+    return "Teaching History";
+  }
+}
+
   
