@@ -46,7 +46,7 @@ function printTeacher(firstName: string, lastName: string): string {
   return `${firstInitial}. ${lastName}`;
 }
 
-printTeacher("samuel", "kamau");
+console.log(printTeacher("samuel", "kamau"));
 
 interface StudentClass {
  new (firstName: string, lastName: string): StudentClass;
