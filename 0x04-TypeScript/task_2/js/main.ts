@@ -51,7 +51,7 @@ class Teacher implements TeacherInterface {
     }
   }
   type Subjects = "Math" | "History";
-  function teachClass(todayClass: Subjects): string | void {
+  function teachClass (todayClass: Subjects): string | void {
     if (todayClass === "Math") {
       return "Teaching Math";
     } else if (todayClass === "History") {
