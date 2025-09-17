@@ -60,7 +60,7 @@ constructor(private firstName: string, private lastName: string) {}
     return "Currently working";
   }
     displayName(): string { 
-      return this.firstName;
+      return this.lastName;
   }
 }
 
