@@ -6,6 +6,7 @@ interface Teacher {
   location: string;
   contract: boolean;
   [propName: string]: any;
+  
 };
 
 const teacher: Teacher = {
@@ -20,15 +21,15 @@ console.log(teacher);
 
 interface Directors extends Teacher {
   numberOfReports: number;
-  
-}
+  }
 
 const director: Directors = {
   firstName: "John",
-  lastName: "Mathew:",
+  lastName: "Mathew",
   location: "Nairobi",
-  fullTimeEmployee: true,
+  fulltimeEmployee: true,
   numberOfReports: 17,
+  contract: true
 };console.log(director);
 type printTeacherFunction = (firstName: string, lastName: string) => string;
 
